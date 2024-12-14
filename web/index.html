@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Чат</title>
+		<link rel="stylesheet" href="/style.css" />
+	</head>
+	<body>
+		<h1>Чат</h1>
+
+		<div>
+			<label
+				>Имя: <input id="nameInput" type="text" placeholder="Введите имя"
+			/></label>
+			<button id="connectBtn">Подключиться</button>
+		</div>
+
+		<div style="display: flex; margin-top: 20px">
+			<div style="width: 200px">
+				<h3>Онлайн:</h3>
+				<ul id="users"></ul>
+			</div>
+			<div style="flex: 1; margin-left: 20px">
+				<div
+					id="messages"
+					style="border: 1px solid #ccc; height: 300px; overflow: auto"
+				></div>
+				<div style="margin-top: 10px">
+					<input id="msgInput" type="text" placeholder="Ваше сообщение" />
+					<button id="sendBtn">Отправить</button>
+				</div>
+			</div>
+		</div>
+
+		<script src="/main.js"></script>
+	</body>
+</html>
